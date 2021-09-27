@@ -1,0 +1,38 @@
+<div class="container">
+
+    <!-- Error Message to all fields are required -->
+    <div *ngIf="errormsg" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{errormsg}}!</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <!-- Success Message -->
+      <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>{{successmsg}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <form [formGroup]="userForm">
+        <div class="col-lg-4 mt-2">
+            <input type="text" class="form-control" formControlName="pname" placeholder="enter product name">
+        </div>
+        <div class="col-lg-4 mt-2">
+            <input type="text" class="form-control" formControlName="pdesc" placeholder="enter product Desc">
+        </div>
+        <div class="col-lg-4 mt-2">
+            <select [(ngModel)]="selectedValue" formControlName="cid" class="form-select">
+                <option *ngFor="let c of categories" [ngValue]="c.cid">{{c.cname}}</option>
+              </select>
+        </div>
+        <!-- <div class="col-lg-4 mt-2">
+            <input type="text" class="form-control" formControlName="cid" placeholder="enter category id">
+        </div> -->
+
+        <!-- create will only show when getparamid in .ts file has  value othervise update will show -->
+        <div class="col-lg-4 mt-2" *ngIf="!getparaId" (click)="userSubmit()"> 
+            <button class="btn btn-primary btn-sm">Create</button>
+        </div>
+        <div class="col-lg-4 mt-2" *ngIf="getparaId" (click)="userUpdate()"> 
+            <button class="btn btn-dark btn-sm">Update</button>
+        </div>
+    </form>
+
+</div>

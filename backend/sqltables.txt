@@ -1,0 +1,13 @@
+
+create table category(
+    -> cid int primary key,
+    -> cname varchar(50));
+
+
+create table products(
+    -> pid int not null,
+    -> pdesc varchar(255),
+    -> cid int,
+    -> primary key (pid),
+    -> CONSTRAINT fk_cid FOREIGN KEY (cid) REFERENCES category(cid)
+    -> );

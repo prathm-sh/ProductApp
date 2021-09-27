@@ -1,0 +1,38 @@
+<div class="container m-5">
+  <!-- Success messge -->
+  <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>{{successmsg}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Description</th>
+            <th scope="col">Category Name</th>
+            <th scope="col">Edits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let us of readData | paginate: { id:'listing_pagination', itemsPerPage: limit, currentPage: p, totalItems: total}">
+            <th scope="row">{{us.pid}}</th>
+            <td>{{us.pname}}</td>
+            <td>{{us.pdesc}}</td>
+            <td>{{us.cname}}</td>
+            <td class="text-center">
+              <button class="btn btn-sm btn-danger" (click)="deleteId(us.pid)">Delete</button>
+              <a [routerLink]="['/create',us.pid]" class="btn btn-sm btn-success mx-2">Update</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        <a routerLink="create" class="btn btn-primary mx-2">create product</a>
+      </div>
+
+      <div class="pagination pagination-sm m-0 float-right">
+        <pagination-controls id="listing_pagination" (pageChange)="getPage($event)"></pagination-controls>
+      </div>
+</div>
+

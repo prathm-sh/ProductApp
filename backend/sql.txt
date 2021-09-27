@@ -1,0 +1,38 @@
+insret into categories values (1,'apple');
+insert into categories values (2,'samsung');
+insert into categories values (3,'xiomi');
+insert into categories values (4,'oppo');
+insert into categories values (8,'realme');
+insert into categories values (9,'others');
+
+
+insert into products(pname,pdesc,cid) values ('Iphone 4s','Apple Iphone 4s',1);
+insert into products(pname,pdesc,cid) values ('Redmi note 6','Xiomi redmi note 6',3);
+insert into products(pname,pdesc,cid) values ('Nokia a2','Nokia phone',9);
+insert into products(pname,pdesc,cid) values ('galaxy 3s','Samsung galaxy 3s ',2);
+insert into products(pname,pdesc,cid) values ('Iphone 5','Apple Iphone 5s',1);
+insert into products(pname,pdesc,cid) values ('Note a55','Samsung galaxy note a55 ',2);
+insert into products(pname,pdesc,cid) values ('Redmi 7','Xiomi redmi note 7',3);
+insert into products(pname,pdesc,cid) values ('Renno 5s','oppo Renno 7',2);
+insert into products(pname,pdesc,cid) values ('Iphone 7x','Apple Iphone 7x',1);
+insert into products(pname,pdesc,cid) values ('realme 7pro','realme 7pro s ',8);
+insert into products(pname,pdesc,cid) values ('Iphone 6s','Apple Iphone 6s',1);
+insert into products(pname,pdesc,cid) values ('Redmi note 10 pro','Xiomi redmi note 10 pro',3);
+insert into products(pname,pdesc,cid) values ('lava b2','lava phone a2',9);
+insert into products(pname,pdesc,cid) values ('galaxy a53','Samsung galaxy a53s ',2);
+insert into products(pname,pdesc,cid) values ('Iphone 5 mini','Apple Iphone 5 mini',1);
+insert into products(pname,pdesc,cid) values ('Note a78','Samsung galaxy note a78 ',2);
+insert into products(pname,pdesc,cid) values ('Redmi 8','Xiomi redmi note 8',3);
+insert into products(pname,pdesc,cid) values ('Renno 53s','oppo Renno 53s',2);
+insert into products(pname,pdesc,cid) values ('Iphone 9x ultra','Apple Iphone 9x ultra',1);
+insert into products(pname,pdesc,cid) values ('realme 8pro max','realme 8pro max ',8);
+insert into products(pname,pdesc,cid) values ('Iphone 10s','Apple Iphone 10s',1);
+insert into products(pname,pdesc,cid) values ('Redmi 6a','Xiomi redmi 6a',3);
+insert into products(pname,pdesc,cid) values ('Nokia a23','Nokia phone a23',9);
+insert into products(pname,pdesc,cid) values ('galaxy j7','Samsung galaxy j7 ',2);
+insert into products(pname,pdesc,cid) values ('Iphone 12 max','Apple Iphone 12 mx',1);
+insert into products(pname,pdesc,cid) values ('Note a89','Samsung galaxy note a89 ',2);
+insert into products(pname,pdesc,cid) values ('Redmi mix','Xiomi redmi mix',3);
+insert into products(pname,pdesc,cid) values ('Renno 5s','oppo Renno 7',2);
+insert into products(pname,pdesc,cid) values ('Iphone 7x','Apple Iphone 7x',1);
+insert into products(pname,pdesc,cid) values ('realme 7pro','realme 7pro s ',8);

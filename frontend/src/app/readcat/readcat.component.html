@@ -1,0 +1,12 @@
+<div class="container">
+    <ul class="list-group my-3" *ngFor='let us of readData'>
+        <li class="list-group-item">
+            {{us.cname}}
+            <a href=""  class="btn btn-sm btn-success float-right" [routerLink]="['/createcat',us.cid]">update</a>
+             <button href=""  class="btn btn-sm btn-danger mx-3 float-right" (click)="deleteCat(us.cid)">Delete</button>
+        </li>
+    </ul>
+    <div>
+        <a routerLink="createcat" class="btn btn-primary mx-2">Create category</a>
+    </div>
+</div>
