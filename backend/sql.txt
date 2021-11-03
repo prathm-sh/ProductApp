@@ -36,4 +36,3 @@ insert into products(pname,pdesc,cid) values ('Redmi mix','Xiomi redmi mix',3);
 insert into products(pname,pdesc,cid) values ('Renno 5s','oppo Renno 7',2);
 insert into products(pname,pdesc,cid) values ('Iphone 7x','Apple Iphone 7x',1);
 insert into products(pname,pdesc,cid) values ('realme 7pro','realme 7pro s ',8);
-insert into products(pname,pdesc,cid) values ('realme 17pro','realme 17pro s ',8);
